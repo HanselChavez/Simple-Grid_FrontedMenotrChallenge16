@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+	<title>Frontend Mentor | Single Price Grid Component</title>
+
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+	 	html{
+			box-sizing: border-box; 
+		}   
+		body,html{		
+			
+		} 
+		body{ 
+			
+			font-family: var(--karla);
+			background-color: var(--light-gray);
+		}   
+		*,*::before,*::after{
+			text-align: left;
+			box-sizing: inherit;
+			margin: 0;
+			padding: 0;
+		}
+		p{
+			font-size: 16px;
+		}
+		:root{
+			--karla: 'Karla', sans-serif;
+
+			--cyan: hsl(179, 62%, 43%);
+			--yellow: hsl(71, 73%, 54%);
+			--light-gray: hsl(204, 43%, 93%);
+			--grayish-blue: hsl(218, 22%, 67%);
+		}	
+		.container{
+			display: grid;
+			grid-template-rows: 1fr auto auto;
+			width: 85%;
+			max-width: 380px;
+			margin: 82px auto;
+			overflow: hidden;
+			border-radius: 5px;
+		}
+		.card-title{
+			color: #fff;
+			font-size: 20px;
+		}
+		
+		.price{
+			display: flex;
+			align-items: center; 
+			gap: 15px;
+			color: #fff;
+			font-size: 34px;
+			font-weight: 700;
+			margin: 18px 0 10px;
+		}
+		.card-text{
+			color: #fff;
+			font-size: 17px;
+		}
+		.btn{
+			background-color: var(--yellow);
+			border: none;
+			width: 100%;
+			border-radius: 5px;
+			text-align: center;
+			color: #fff;
+			cursor: pointer;
+			font-weight: 700;
+			font-size: 17px;
+			padding: 17px 0;
+			margin: 31px auto 0;
+		}
+		.font-light{
+			font-weight: 400;
+			font-size: 18px;
+			color: #ffffffbd;
+		}
+		.text-yellow{
+			color: var(--yellow);
+			margin: 28px auto 22px;
+			font-size: 17px;
+		}
+		
+		.text-gray{
+			font-size: 16px;
+			color: var(--grayish-blue);
+			line-height: 1.8;			
+		}
+		
+		.text-cyan{
+			color: var(--cyan);
+		}
+		.text-light-white{
+			list-style: none;
+			margin: 20px 0 0 ;
+			color: hsla(0, 0%, 100%, 0.658);
+		}
+		.text-light-white li{
+			margin: 4px 0;
+		}
+		.bg-white{
+			background-color: #fff;
+			height: 295px;
+			padding: 30px 20px;
+		}
+		.bg-cyan{
+			background-color: var(--cyan);
+			padding: 30px 20px 25px ;
+		}
+		.bg-light-cyan{
+			background-color:  hsla(179, 62%, 43%, 0.829);
+			padding: 28px 20px 25px ;
+		}
+	
+		@media (min-width: 768px) {
+			.card{
+				padding: 35px;
+			}
+			.container{
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-template-rows: auto 1fr;
+				max-width: 700px;
+			}
+			.bg-white{
+				grid-column: 1/3;
+				height: 260px;
+			}
+		
+			body{
+				height: 100vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<mai class="container">
+		<div class="card bg-white">
+			<h2 class="card-title text-cyan">
+				Join our community
+			</h2>
+			<h3 class="card-subtitle text-yellow">
+				30-day, hassle-free money back guarantee
+			</h3>
+			<p class="card-text text-gray">
+				Gain access to our full library of tutorials along with expert code reviews. 
+				Perfect for any developers who are serious about honing their skills.
+			</p>
+		</div>
+		<div class="card bg-cyan">
+			<h2 class="card-title">
+				Monthly Subscription
+			</h2>
+			<p class="price">
+				&dollar;29 
+				<span class="font-light">
+					per month
+				</span>
+			</p>
+			<p class="card-text">
+				Full access for less than &dollar;1 a day
+			</p>
+			<input class="btn" type="submit" value="Sign Up">
+		</div>
+		<div class="card bg-light-cyan">
+			<h2 class="card-title">
+				Why Us
+			</h2>
+			<ul class="text-light-white">
+				<li>
+					Tutorials by industry experts					
+				</li>
+				<li>
+					Peer &amp; expert code review
+				</li>
+				<li>
+					Coding exercises
+				</li>
+				<li>
+					Access to our GitHub repos
+				</li>
+				<li>
+					Community forum
+				</li>
+				<li>
+					Flashcard decks
+				</li>
+				<li>
+					New videos every week
+				</li>
+			</ul>
+		</div>
+	</mai>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+  
+
+</body>
+</html>
